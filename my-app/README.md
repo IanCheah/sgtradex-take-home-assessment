@@ -144,4 +144,5 @@ The same goes for other fields. In the real world, I think it is safe to assume 
 There ought to time validation in this assessment. For example, when checking if a vessel has reached the anchorage, we should not only check that the fields are not null, we should also make sure that the `pilotage_end_dt_time` is before the current time. Since the time fields were randomly populated, I did not carry on with the time check. The reasons are as such.
 
 I tried checking 6 vessels' information and noticed that all their time fields were later than the current time (in the future). If I added that check, most of the status displyed would be `Unknown Status`. Hence, I decided to make do without it.
+
 ---

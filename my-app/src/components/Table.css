@@ -1,0 +1,40 @@
+/* PilotageTable.css */
+
+.pilotage-table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Table header styling */
+  .pilotage-table th {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #0056b3;
+  }
+  
+  /* Table row styling */
+  .pilotage-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Alternate row colors */
+  .pilotage-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Hover effect for rows */
+  .pilotage-table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Add rounded corners to the table */
+  .pilotage-table {
+    border-radius: 8px;
+    overflow: hidden; 
+  }

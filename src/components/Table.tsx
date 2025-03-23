@@ -147,8 +147,6 @@ const getArrivingStatus = (item: PilotageData): { english: string; chinese: stri
         const estimatedArrival = formatDateTime(
             new Date(new Date(item.pilotage_start_dt_time).getTime() + 1.5 * 60 * 60 * 1000).toISOString()
         );
-        const englishMessage = statusMessages.pilotageStarted.english(item.pilotage_loc_to_code, startTime, estimatedArrival);
-        const chineseMessage = statusMessages.pilotageStarted.chinese(item.pilotage_loc_to_code, startTime, estimatedArrival);
         return {
             english: statusMessages.pilotageStarted.english(item.pilotage_loc_to_code, startTime, estimatedArrival),
             chinese: statusMessages.pilotageStarted.chinese(item.pilotage_loc_to_code, startTime, estimatedArrival),
@@ -178,8 +176,6 @@ const getLeavingStatus = (item: PilotageData): { english: string, chinese: strin
         !item.pilotage_end_dt_time
     ) {
         const departureTime = formatDateTime(item.pilotage_cst_dt_time);
-        const englishMessage = statusMessages.atAnchorage.english(item.pilotage_loc_from_code, departureTime);
-        const chineseMessage = statusMessages.atAnchorage.chinese(item.pilotage_loc_from_code, departureTime);
         return {
             english: statusMessages.atAnchorage.english(item.pilotage_loc_from_code, departureTime),
             chinese: statusMessages.atAnchorage.chinese(item.pilotage_loc_from_code, departureTime),

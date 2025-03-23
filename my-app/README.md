@@ -21,7 +21,7 @@ This project is a web application desgined to display vessel pilotage data retre
 - **Pilotage Data Table**: Displays the latest pilotage data in a human-readable format.
 - **Error Handling**: Handles invalid IMO number and API errors.
 - **Time Zone Conversion**: Converts Zulu Time (UTC) to Singapore Time (SGT) for all calculations.
-- **Bilingual Support**: Displays status message in both **English** and **Chinese** to cater to truck drivers who may not be fluence in English.
+- **Bilingual Support**: Displays status message in both **English** and **Chinese** to cater to truck drivers who may not be fluence in English. (see [Supplementary Information](#supplementary-information))
 
 ---
 
@@ -144,6 +144,12 @@ The same goes for other fields. In the real world, I think it is safe to assume 
 ### Time validation
 There ought to time validation in this assessment. For example, when checking if a vessel has reached the anchorage, we should not only check that the fields are not null, we should also make sure that the `pilotage_end_dt_time` is before the current time. Since the time fields were randomly populated, I did not carry on with the time check. The reasons are as such.
 
-I tried checking 6 vessels' information and noticed that all their time fields were later than the current time (in the future). If I added that check, most of the status displyed would be `Unknown Status`. Hence, I decided to make do without it.
+- I tried checking 6 vessels' information and noticed that all their time fields were later than the current time (in the future). If I added that check, most of the status displyed would be `Unknown Status`. Hence, I decided to make do without it.
 
+### Chinese Language Support 
+#### Why Include Chinese?
+- **Target Audience**: Many truck drivers in Singapore, especially older ones, may not be fluent in English. Providing bilingual support ensures that all users can understand the status updates clearly.
+- **User Experience**: By displaying messages in both English and Chinese, we imporve accessibility and usability for a wider audience. This would mean more people using the application we make.
+#### Implemntation
+- **Static Translation**: Pre-defined bilingual messages are used to ensure consistency and avoid dynamic translation errors.
 ---

@@ -21,19 +21,20 @@ This project is a web application desgined to display vessel pilotage data retre
 - **Pilotage Data Table**: Displays the latest pilotage data in a human-readable format.
 - **Error Handling**: Handles invalid IMO number and API errors.
 - **Time Zone Conversion**: Converts Zulu Time (UTC) to Singapore Time (SGT) for all calculations.
+- **Bilingual Support**: Displays status message in both **English** and **Chinese** to cater to truck drivers who may not be fluence in English.
 
 ---
 
 ## Assumptions
 
 1. **Journey Time**:
-    - The journey from the anchorage to the berth at the port takes **30minutes**.
+    - The journey from the anchorage to the berth at the port takes **30 minutes**.
     - The entire pilotage service, from request time to end time, takes around **2 hours**.
     - Using these estimated journey time, we let the truck drivers know the ETA of the vessels
 
 2. **Pilotage Service Sequence**:
     - Vessel arrives at the pilot boarding location -> Pilot boards -> Pilotage servgice starts -> Pilotage service ends.
-    - All the time field in these fields should follow this order.
+    - All the time field should follow this order.
 
 3. **Delivery and Loading of Containers**
     - Once the vessel is at the pilot boarding location, no more loading of containers occurs.

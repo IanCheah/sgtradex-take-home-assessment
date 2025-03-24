@@ -19,6 +19,7 @@ body {
   max-width: 1000px;
   width: 100%;
   overflow-y: auto;
+  max-height: 90vh;
 }
 
 h1 {

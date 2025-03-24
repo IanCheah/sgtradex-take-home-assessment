@@ -119,7 +119,10 @@ This project is a web application designed to display vessel pilotage data retri
 ---
 
 ## Setup Instructions
+### Alternative 1 (Recommended)
+I have deployed the web page using Netlify. Simply click on the link [here](https://ian-sgtradex-takehomeassessment.netlify.app/) to view the web application
 
+### Alternative 2 (try this if alternative 1 fails)
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/IanCheah/sgtradex-take-home-assessment

@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import { getPilotageData } from "./services/api";
 import SearchBar from "./components/SearchBar";
 import PilotageTable from "./components/Table";
-import ErrorMessage from "./components/Error";
 import { PilotageData } from "./types/PilotageData";
 import "./App.css";
 
